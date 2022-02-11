@@ -31,7 +31,7 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a     
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "On macOS via Homebrew"
+      - name: "Installing With A Package Manager - Homebrew"
         run: brew install kind 
 
 # https://github.com/actions/virtual-environments
@@ -52,7 +52,7 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a     
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "On macOS via Homebrew"
+      - name: "Installing With A Package Manager - Homebrew"
         run: brew install kind 
 
 # https://github.com/actions/virtual-environments
@@ -73,5 +73,5 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a     
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "On macOS via Homebrew"
+      - name: "Installing With A Package Manager - Homebrew"
         run: brew install kind 
