@@ -1,5 +1,5 @@
 
-name: "macos kind CI workflow"
+name: "Homebrew kind CI workflow"
 
 on:
   push:
