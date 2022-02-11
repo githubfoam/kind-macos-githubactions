@@ -1,5 +1,5 @@
 
-name: "MacPorts kind CI workflow"
+name: "homebrew kind CI workflow"
 
 on:
   push:
@@ -29,10 +29,10 @@ jobs:
       - name: "Get Mac System Details with system_profiler"
         run: system_profiler | more  
       - name: "osfingerprinting"
-        run: uname -a     
+        run: uname -a                                  
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "Installing With A Package Manager - MacPorts"
-        run: sudo port selfupdate && sudo port install kind
+      - name: "Installing With A Package Manager - Homebrew"
+        run: brew install kind 
 
 # https://github.com/actions/virtual-environments
   macos-11-kind-homebrew:
@@ -52,7 +52,7 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a     
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "On macOS via Homebrew"
+      - name: "Installing With A Package Manager - Homebrew"
         run: brew install kind 
 
 # https://github.com/actions/virtual-environments
@@ -73,5 +73,5 @@ jobs:
       - name: "osfingerprinting"
         run: uname -a     
       # https://kind.sigs.k8s.io/docs/user/quick-start/                              
-      - name: "On macOS via Homebrew"
+      - name: "Installing With A Package Manager - Homebrew"
         run: brew install kind 
